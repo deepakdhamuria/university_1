@@ -256,12 +256,13 @@ label:hover {
 }
  
 .accslide p, h2, img {
-  width: 420px;
-  padding-left: 10px;
+  width: 600px;
+  
 }
  
 .accslide img {
-  margin-top: 10px;
+  margin-top: -10px;
+  
 }
 
 input[type="radio"]:checked ~ .accslide {

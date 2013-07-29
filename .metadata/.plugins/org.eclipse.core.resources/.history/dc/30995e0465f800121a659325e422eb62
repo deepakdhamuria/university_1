@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Fake University | Where you can learn anything</title>
+<link href="styles/university.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	
+	<div class="container">
+	<div class="bannerSection">This is top</div>
+	<form>
+  <ul>
+    <li>
+      <input id="rad1" type="radio" name="radio" checked="checked">
+      <label for="rad1"><div class="rotate">About Fake</div></label>
+      <div class="accslide">
+      
+      <img alt="university" src="images/University_of_Sydney_Main_Quadrangle.jpg">
+      </div>
+    </li>
+    <li>
+      <input id="rad2" type="radio" name="radio">
+      <label for="rad2"><div class="rotate">Campus</div></label>
+      <div class="accslide">
+      <img alt="university" src="images/p.jpg">
+      </div>
+    </li>
+    <li>
+      <input id="rad3" type="radio" name="radio">
+      <label for="rad3"><div class="rotate">Students</div></label>
+      <div class="accslide">
+      <img alt="university" src="images/International_Students.jpg">
+      </div>
+    </li>
+    <li>
+      <input id="rad4" type="radio" name="radio">
+      <label for="rad4"><div class="rotate">Programs</div></label>
+      <div class="accslide">
+      <img alt="university" src="images/programs.jpg">
+      </div>
+    </li>
+
+    <li>
+      <input id="rad5" type="radio" name="radio">
+      <label for="rad5"><div class="rotate">Faculty</div></label>
+      <div class="accslide">
+      </div>
+    </li>
+    <li>
+      <input id="rad6" type="radio" name="radio">
+      <label for="rad6"><div class="rotate">Placement</div></label>
+      <div class="accslide">
+      </div>
+    </li>
+    <li>
+      <input id="rad7" type="radio" name="radio">
+      <label for="rad7"><div class="rotate">Alumni</div></label>
+      <div class="accslide">
+      </div>
+    </li>
+    </ul> 
+</form>
+	</div>
+
+
+
+</body>
+</html>

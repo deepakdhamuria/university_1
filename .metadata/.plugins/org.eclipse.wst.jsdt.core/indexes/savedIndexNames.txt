@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\Users\aNiMaTeD\Documents\GitHub\university_1\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4147861018.index
+148845062.index
+1484074427.index
+4176268529.index
+7449242.index
