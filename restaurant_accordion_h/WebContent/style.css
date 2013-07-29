@@ -1,0 +1,352 @@
+/*  
+CSS3 Horizontal Accordion Slider /  A Simple Website
+Version: 1.0
+Author: Webarti
+Author URL: http://www.webarti.com/
+*/
+
+/*********** Global Styles ***********/
+body {
+	background-color:#E5E5E5;
+	color:#1E1C21;
+	font-family:times New Roman;
+	font-size:13px;
+	padding:0 0 15px 0;
+	margin:0;
+}
+
+a {
+	-moz-outline-style:none;
+	outline:none;
+}
+.topSection{
+	font-size:36px;
+	font-style:italic;
+	font-family:verdana;
+}
+
+.topSection>span
+{
+	color:#424242;
+}
+.container {
+	margin:70px auto 25px auto;
+	padding:30px;
+	width:1150px;
+}
+
+.loadBody {
+	margin:70px auto 25px auto;
+	
+	width:1150px;
+}
+
+.header {
+	color:#000000;
+	font-size:36px;
+	font-style:italic;
+	height:50px;
+	letter-spacing:-1px;
+	margin:0px auto 25px auto;
+	padding:25px 0 0 8px;
+	position:absolute;
+	text-shadow:1px 1px 0 #F2F2F2;
+	top:8px;
+	width:1050px;
+	word-spacing:5px;
+	text-align: center
+}
+
+/*********** Theme Styles ***********/
+.accordion  {
+	font-family:Times News Roman;
+	font-size:15px;
+}
+
+.accordion>ul>li {
+	background-color:#E5E5E5; 
+}
+
+.accordion>ul>li>a {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	background-color:#000000;
+	color:#FAFAFA;
+	font-size:17px;
+	font-weight:bold;
+	letter-spacing:2px;
+	text-decoration:none;
+}
+
+.accordion>ul>li>a:hover{
+	background-color:#743d94;
+	color:#fff;
+}
+
+.accordion>ul>li>div {
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;	
+	background-color:#F5F5F5;
+	border-color:#BBBBBB #ddd #ddd #BBBBBB;
+	border-style:solid;
+}
+
+/******** Theme Structure *********/
+.accordion>ul>li>div {
+	border-width:1px;
+	height:340px;
+	margin-right:4px;
+	padding:30px;
+	width:740px;
+}
+
+.accordion>ul>li>a {
+	margin-right:4px;
+	width:30px;
+}
+
+ul.accordion-ie>li>a>span { /* IE only */
+	margin-left:5px;
+	/* This value is  necessary for centering rotated texts in Internet Explorer. */
+}
+
+.accordion  {	
+	width:1050px;
+	/* 	This value refers to the total width of visible components
+		width = accordion>ul>li>div ( width + paddingRight + paddingLeft + marginRight + borderRightWidth + borderLeftWidth )  
+			+ accordion>ul>li>a ( number of accordions x ( width + marginRright ) )  
+		width = ( 740px + 30px + 30px + 4px + 1px + 1px ) + ( 3 x (  30px + 4px ) )
+		width = 908px
+	*/
+}
+
+.accordion, .accordion>ul>li>a  {	
+	height:200px;
+	/* 	This value refers to the total height of visible area
+		height = accordion>ul>li>div ( height + paddingTop + paddingBottom + borderTopWidth + borderBottomWidth ) 
+		width = ( 340px + 30px + 30px + 1px +1px )
+		width = 402px
+	*/
+}
+
+.accordion>ul>li {
+	margin-right:-806px; 
+	/* 	This value refers to the negative of total width of content <div>
+		margin-right = accordion>ul>li>div (width + padding-right + padding-left + marginRight + borderRightWidth + borderLeftWidth )
+		margin-right = 740px + 30px + 30px + 4px + 1px +1px 
+		margin-right = 806px
+	*/
+	
+	width:841px;
+	/* 	width = .accordion>ul>li>div (width + padding-right + padding-left + marginRight + borderRightWidth + borderLeftWidth ) 
+				+ .accordion>ul>li>a ( width + margin-right )
+		width = ( 740px + 30px + 30px + 4px + 1px +1px  ) + ( 30px + 4px )
+		width = 841px
+	*/
+	
+	/* Transition Effect */
+    transition: margin-right 0.3s ease 0.2s;
+    -moz-transition: margin-right 0.3s ease 0.2s;
+    -webkit-transition: margin-right 0.3s ease 0.2s;
+    -o-transition: margin-right 0.3s ease 0.2s;
+}
+
+/*******  Do not change folllowing properties  **********/
+.accordion  {overflow:hidden;}
+.accordion>ul {list-style:none;padding:0;margin:0;width:9999em;}
+.accordion>ul>li {float:left;overflow:hidden;}
+.accordion>ul>li>a {float:left;position:relative;z-index:1;-moz-outline-style:none;outline:none;}
+.accordion>ul>li>a>span{ /* Text Rotation for all browsers */
+	-moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+	-ms-writing-mode:lr-bt;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	bottom:20px;display:block;position:absolute;width:100%;white-space:nowrap;
+}
+ul.accordion-ie>li>a>span {cursor:pointer;width:auto;} /* IE only */
+.accordion>ul>li>div {float:left;overflow-y:auto;overflow-x:hidden;}
+.accordion>ul>li:hover {margin-right:0px;}
+ul.accordion-ie>li:hover {margin-right:0px;} /* IE only */
+
+
+/*********** Content Styles **********/
+div.content {
+	padding:8px 10px;
+	line-height:20px;
+	text-shadow:1px 1px 0 #FFFFFF;
+}
+
+.title {
+	border-bottom:3px dashed #CCCCCC;
+	color:#743D94;
+	font-size:35px;
+	font-style:italic;
+	letter-spacing:2px;
+	margin:0 0 35px;
+	padding:0 0 23px 20px;
+	word-spacing:5px;
+}
+
+.form { 
+	float:left;
+	width:370px;
+	margin-right:80px;
+}
+
+div.blog-info {
+	float:left;
+	margin:0 15px 0 0;
+	padding-bottom:20px;
+}
+
+div.blog-info a {
+	display:inline-block;
+}
+
+span.post-date {
+	background-color:#dbceeb;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #b5b3e0;
+	display:block;
+	color:#7c5099;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	margin:10px 0 0;
+	padding:2px;
+	text-align:center;
+	text-shadow:1px 1px 0px #efdcfa;
+}
+
+div.blog-content {
+	float:left;
+	padding-bottom:20px;
+	width:600px;
+}
+
+div.blog-content h3 {
+	font-size:20px;
+	margin:0 0 10px 0;
+}
+
+div.button-links {
+	float:right;
+	margin:35px 0 0 0;
+}
+a.button, span.button {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	background-color:#000000;
+	color:#FAFAFA;
+	cursor:pointer;
+	display:inline-block;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:0;
+	padding:2px 10px;
+	text-decoration:none;
+	text-shadow:none;
+}
+
+a.button:hover{
+	background-color:#743d94;
+	color:#fff;
+}
+
+/** Form Elements **/
+input::-moz-focus-inner { /** Removes Firefox’s dotted outline on buttons **/
+	border:0;
+	padding:0;
+}
+
+label {
+	color:#999;
+	cursor:pointer;
+	display:block;
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	margin-right:1px;
+	padding:10px 8px 8px 0;
+	text-align:right;
+	width:60px;
+}
+
+label:hover{
+	color:#444;
+}
+
+textarea{
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:2px solid #EEEEEE;
+	color:#444444;
+	font-family:arial;
+	font-size:13px;
+	line-height:20px;
+	margin-bottom:10px;
+	padding:7px;
+	width:260px;
+}
+
+input[type="text"]  {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:2px solid #eee;
+	color:#444;
+	font-family:arial;
+	font-size:13px;
+	margin-bottom:10px;
+	padding:10px;
+	width:200px;
+}
+
+input[type="text"]:focus, textarea:focus {
+	background-color:#F6EFFF;
+	border-color:#9F6BBF;
+}
+
+input[type="button"] {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	background-color:#EEE;
+	border:1px outset #999;
+	color:#666;
+	cursor:pointer;
+	font-weight:bold;
+	padding:5px 0;
+	margin:0 0 0 70px;
+	width:125px;
+	*padding:1px 15px 0px 15px; /** This works only in ie7 **/
+}
+
+input[type="button"]:hover {
+	background:#ddd;
+	border-color:#333;
+	color:#222;
+}
+
+input[type="button"]:active {
+	border:1px inset #333;
+}
+
+div.clearer {
+	border-bottom:1px solid #FFFFFF;
+	border-top:1px solid #D5D5D5;
+	clear:both;
+	height:0;
+	line-height:0;
+	margin:30px 0 40px;
+	padding:0;
+}
+	

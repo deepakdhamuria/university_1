@@ -1,0 +1,270 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color:#f5f5dc;
+	color:#1E1C21;
+	font-family:times New Roman;
+	font-size:13px;
+	padding:0 0 15px 0;
+	margin:0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+	margin:70px auto 25px auto;
+	padding:30px;
+	width:1200px;
+}
+.bannerSection {
+	font-family: times new roman;
+	font-size: 37px;
+	font-weight: bold;
+	color: red;
+}
+/*LIST*/
+ul {
+  list-style: none;
+}
+
+/*FORM*/
+input {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+label {
+  display: block;
+  float: left;
+  height: 300px;
+  width: 75px;
+  
+  overflow: hidden;
+  /*border-style:solid;*/
+  background: #999;
+  text-align: left;
+  font: 14px/50px Helvetica, Verdana, sans-serif; 
+ 
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease;
+	letter-spacing: 2px;
+	
+}
+label:hover {
+  background: #232323;
+  color: #fff;
+  cursor: pointer;
+}
+.rotate
+{
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left:5px;
+	-moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+       -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+  -webkit-transform: rotate(-90.0deg);  /* Saf3.1+, Chrome */
+             filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+         -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+    float:left;position:relative;z-index:1;-moz-outline-style:none;outline:none;
+    bottom:-220px;display:block;width:100%;white-space:nowrap;
+}
+
+#rad1 + label {
+  background: #2ECCFA;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease; 
+  
+}
+
+#rad1 + label:hover {
+  background: #0489B1;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad1:checked + label {
+  background: #0489B1;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad2 + label {
+  background: #FACC2E;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease; 
+  
+}
+
+#rad2 + label:hover {
+  background: #B18904;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad2:checked + label {
+  background: #B18904;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad3 + label {
+  background: #FE642E;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease; 
+  
+}
+
+#rad3 + label:hover {
+  background: #B43104;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad3:checked + label {
+  background: #B43104;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad4 + label {
+  background: #9AFE2E;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease; 
+  
+}
+
+#rad4 + label:hover {
+  background: #5FB404;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad4:checked + label {
+  background: #5FB404;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad5 + label {
+  background: #D358F7;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease; 
+  
+}
+
+#rad5 + label:hover {
+  background: #A901DB;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad5:checked + label {
+  background: #A901DB;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad6 + label {
+  background: #FA5882;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease; 
+  
+}
+
+#rad6 + label:hover {
+  background: #B40431;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad6:checked + label {
+  background: #B40431;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad7 + label {
+  background: #999;
+  -webkit-transition: width 1s ease, background 0.5s ease;
+     -moz-transition: width 1s ease, background 0.5s ease;
+       -o-transition: width 1s ease, background 0.5s ease;
+      -ms-transition: width 1s ease, background 0.5s ease;
+          transition: width 1s ease, background 0.5s ease; 
+  
+}
+
+#rad7 + label:hover {
+  background: #232323;
+  color: #fff;
+  cursor: pointer;
+}
+
+#rad7:checked + label {
+  background: #232323;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+/*SLIDES*/
+.accslide {
+  display: block;
+  height: 300px;
+  width: 0px;
+  padding: 10px 0;
+  float: left;
+  overflow: hidden;
+ 
+  color: #333;
+  background: #fff;
+  font: 12px/1.5 Helvetica, Verdana, sans-serif;
+   
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.accslide p, h2, img {
+  width: 420px;
+  padding-left: 10px;
+}
+ 
+.accslide img {
+  margin-top: 10px;
+}
+
+input[type="radio"]:checked ~ .accslide {
+  width: 600px;
+}
+
