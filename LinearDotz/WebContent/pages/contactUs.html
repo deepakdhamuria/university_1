@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<title>lineardotz | The pioneers in web</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<link href="../styles/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../scripts/scripts.js"></script>
+
+</head>
+<body>
+<div id="childContainer">
+<table>
+	<tr style="background-image:url(../images/line.png);background-repeat:repeat; width:1500px;height:100px;">
+		<td width="100%"><table><tr>
+		<td style="width:100px">
+		</td>
+		<td style="width:500px">
+			<div id="topSelect" style="margin-top: -60px;">
+				<table style="width:800px;">
+					<tr>
+						<td style="width:50px;">
+							<div id="ex3" style="margin-top:-20px;">
+								<a href="products.html">
+									<img src="../images/cyan_dot.png"><p>What we do</p>
+								</a>
+							</div>
+						</td>
+						<td style="width:50px;">
+							<div id="ex3" style="margin-top:-20px;">
+								<a href="services.html">
+									<img src="../images/magenta_dot.png"><p>What we did</p>
+								</a>
+							</div>
+						</td>
+						<td style="width:50px;">
+							<div id="ex3" style="margin-top:-20px;">
+								<a href="aboutUs.html">
+									<img src="../images/yellow_dot.png"><p>Who we are</p>
+								</a>
+							</div>
+						</td>
+						<td  style="width:50px;">
+							<img src="../images/black_dot.png">
+						</td>
+						<td  style="width:450px;">
+							<span>Contact Us</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+    	
+    	<td style="width:600px;">
+			<div id="logoText">
+				<a href="index.html"><img alt="" src="../images/logo3.png" style="width:250px;margin-top:-5px;"></a>
+			</div>
+    	</td>
+    	<td style="width:250px"></td>
+    	</tr></table></td>
+	</tr>
+</table>
+</div>
+<div id="mainContent">
+	<form class="form2" id="contactForm">
+
+			<div class="input">
+				<div class="inputtext">Your Name: </div>
+				<div class="inputcontent">
+
+					<input type="text" required="required" name="fname" id="fname"/>
+
+				</div>
+			</div>
+
+			<div class="input">
+				<div class="inputtext">Your Number: </div>
+				<div class="inputcontent">
+					<input type="text" pattern="\d*" required="required" maxlength="10" name="pnumber" id="pnumber"/>
+				</div>
+			</div>
+
+			<div class="input">
+				<div class="inputtext">Your Email: </div>
+				<div class="inputcontent">
+
+					<input type="text" required="required" name="email" id="email"/>
+
+				</div>
+			</div>
+
+			<div class="inputtextbox nobottomborder">
+				<div class="inputtext">Message: </div>
+				<div class="inputcontent">
+
+					<textarea class="textarea" required="required" name="alltext" id="alltext"></textarea>
+
+				</div>
+			</div>
+
+			<div class="buttons">
+				
+				<input class="orangebutton" type="submit" id="submitButton"  name="submitButton" value="Send" />
+				<input class="greybutton" type="reset" value="Reset" />
+			</div>
+
+		</form>
+		<br/>
+		<span id="results"></span>
+</div>
+
+</body>
+</html>
