@@ -39,24 +39,34 @@ a:active {
 	height: 10px;
 	line-height: 0px;
 	color: transparent;
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#ex3 span {
 	font-size: 20px;
 	font-family: Verdana;
 	font-weight: 100;
 	text-align:middle;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
+	visibility: hidden;
 }
-
 #ex3:hover {
 	line-height: 20px;
 	color: #c0c0c0;
 	width: 200px;
-	-webkit-transform:scale(1.1);
-	-moz-transform:scale(1.1);
-	-ms-transform:scale(1.1);
-	-o-transform:scale(1.1);
-	transform:scale(1.1);
+
+}
+
+#ex3:hover span {
+	font-size: 20px;
+	font-family: "Verdana";
+	font-weight: 100;
+	text-align:middle;
+	visibility: visible;
 }
 
 #ex3 img {
@@ -64,8 +74,8 @@ a:active {
 	width: 60px; height: 60px;
 	cursor:pointer;
 	margin-top: -15px;
+	border:0px;
 }
-
 
 #topSelect {
 	width: 70px;
@@ -97,6 +107,13 @@ a:active {
 	font-family: Verdana;
 	font-size:70px;
 	
+}
+
+#logoText img {
+	width:250px;
+	margin-top:-5px;
+	cursor:pointer;
+	border:0px;
 }
 
 span.left{

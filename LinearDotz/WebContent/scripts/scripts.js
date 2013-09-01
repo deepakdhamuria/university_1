@@ -31,9 +31,24 @@ $(document).ready(function(){
        'mail.php',
         $(this).serialize(),
         function(data){
-    	   alert(data);
+    	   alertAndReset(data);
         }
       );
       return false;   
     });   
 });
+
+function alertAndReset(data)
+{
+	var message = data;
+	var n=message.match(/Thank/g);
+	if(n == "Thank")
+	{
+		alert(message);
+		document.getElementById("contactForm").reset();
+	}
+	else
+	{
+		alert(message);
+	}
+}
